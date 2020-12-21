@@ -1,4 +1,77 @@
+a {
+  text-decoration: none;
+}
+
 html {
-  background-color: aquamarine;
+  background-color: #fffffe;
+  font-family: "M PLUS 1p";
+}
+
+body {
+  margin: 0;
+}
+
+.main-header {
+  height: 80px;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: block;
+}
+
+.main-header .main-logo {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  list-style: none;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.main-header .main-logo .main-logo-link {
+  text-decoration: none;
+  font-size: 45px;
+  color: #272343;
+}
+
+.main-header-menus {
+  float: right;
+  padding-right: 20px;
+  display: flex;
+}
+
+.main-header-menus li {
+  margin-left: 15px;
+  list-style: none;
+  margin-top: 44px;
+}
+
+.main-header-menus li .header-menus-li {
+  font-size: 13px;
+  color: #272343;
+  margin: 0 10px;
+}
+
+.header-menus-li:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.pf-container .pf-top {
+  text-align: center;
+}
+
+.pf-container .pf-top .pf-main {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.pf-container .pf-language-skills {
+  text-align: center;
+}
+
+.pf-container .pf-language-skills .pf-language-skills-item {
+  text-decoration: none;
 }
 

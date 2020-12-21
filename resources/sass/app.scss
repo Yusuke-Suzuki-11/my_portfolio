@@ -1,3 +1,15 @@
-html {
-    background-color: aquamarine;
+a{
+	text-decoration: none;
 }
+
+html{
+	background-color:#fffffe;
+	font-family: "M PLUS 1p";
+}
+
+body {
+	margin: 0;
+}
+
+@import "elements/header";
+@import "portfolio";

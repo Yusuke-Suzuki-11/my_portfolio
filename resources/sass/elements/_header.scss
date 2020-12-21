@@ -1,0 +1,45 @@
+.main-header {
+	height: 80px;
+	background-color:white;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	display: block;
+
+	.main-logo{
+		float: left;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		list-style: none;
+		margin-left: 30px;
+		margin-top: 10px;
+		.main-logo-link{
+			text-decoration: none;
+			font-size: 45px;
+			color: #272343;
+		}
+	}
+}
+
+.main-header-menus {
+	float: right;
+	padding-right: 20px;
+	display: flex;
+	li {
+		margin-left: 15px;
+		list-style: none;
+		margin-top: 44px;
+		.header-menus-li{
+			font-size: 13px;
+			color: #272343;
+			margin: 0 10px;
+
+		}
+	}
+}
+
+.header-menus-li:hover {
+	color: white;
+	text-decoration: none;
+}
+
