@@ -1,9 +1,26 @@
+.pf-top-container{
+	text-align: center;
+	padding: 250px 0 350px 0;
+	background-color: black;
+	color: white;
+
+	.pf-top-logo{
+		font-size: 55px;
+	}
+
+	.pf-top-sub-logo{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+}
+
 .pf-container{
+	padding-top: 50px;
+	
 	.pf-top{
 		text-align: center;
 		.pf-main{
 			font-size: 30px;
-			margin-top: 50px;
 		}
 	}
 	.pf-language-skills{

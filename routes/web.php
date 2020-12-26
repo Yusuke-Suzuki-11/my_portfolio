@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SkillController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +15,11 @@ use App\Http\Controllers\SkillController;
 |
 */
 
-Route::get('/', function () {
-	return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 
 Route::group(['prefix' => 'skill'], function ()
 {
 	Route::get('/new', [SkillController::class, 'new'])->name('skill.new');
+	Route::post('/store', [SkillController::class, 'store'])->name('skill.store');
 });
-Route::post('/skill/store', [SkillController::class, 'store'])->name('skill.store');

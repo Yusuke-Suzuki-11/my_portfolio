@@ -24,8 +24,6 @@ class SkillController extends Controller
 
 		$SkillRow->save();
 
-		return redirect(route('skill.new'));
+		return redirect(route('skill.new'))->with('SkillRowset', Skill::all());
 	}
-
-
 }
