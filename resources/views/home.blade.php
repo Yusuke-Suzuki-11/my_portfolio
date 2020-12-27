@@ -22,7 +22,13 @@
 
 <div id="app">
 	<example-component></example-component>
+
+
+	<show-list-component></show-list-component>
 </div>
+
+
+
 
 
 

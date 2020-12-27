@@ -21,6 +21,7 @@ time, mark, audio, video {
 
 body {
   line-height:1;
+  background-color: #efefef;
 }
 
 article,aside,details,figcaption,figure,
@@ -97,3 +98,4 @@ input, select {
 
 @import "elements/header";
 @import "portfolio";
+
