@@ -233,6 +233,33 @@ select {
   text-decoration: none;
 }
 
+.pf-search-btn-show {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.search-type-btn {
+  font-size: 12px;
+  color: #444;
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 5rem;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7), -6px -6px 10px rgba(255, 255, 255, 0.5), 6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.search-type-btn:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), -2px -2px 4px rgba(255, 255, 255, 0.4), 2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-type-btn:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7), inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 2px rgba(255, 255, 255, 0.075), inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
 .pf-top-container {
   text-align: center;
   padding: 250px 0 350px 0;
@@ -259,13 +286,5 @@ select {
 
 .pf-container .pf-top .pf-main {
   font-size: 30px;
-}
-
-.pf-container .pf-language-skills {
-  text-align: center;
-}
-
-.pf-container .pf-language-skills .pf-language-skills-item {
-  text-decoration: none;
 }
 

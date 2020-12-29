@@ -1916,9 +1916,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    alert('test');
+  data: function data() {
+    return {
+      isShow: false,
+      type: null
+    };
+  },
+  methods: {
+    showList: function showList() {
+      this.isShow = !this.isShow;
+    },
+    setSearchType: function setSearchType(typeNum) {
+      this.type = typeNum;
+    }
   }
 });
 
@@ -37514,22 +37555,90 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "v-pf-search-list" }, [
+    _vm.isShow
+      ? _c("div", [
+          _c("div", { staticClass: "pf-search-btn-show" }, [
+            _c(
+              "button",
+              {
+                staticClass: "search-type-btn",
+                on: {
+                  click: function($event) {
+                    return _vm.setSearchType(0)
+                  }
+                }
+              },
+              [_vm._v("言語を絞って探す")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "search-type-btn",
+                on: {
+                  click: function($event) {
+                    return _vm.setSearchType(1)
+                  }
+                }
+              },
+              [_vm._v("スキルを絞って探す")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "search-type-btn",
+                on: {
+                  click: function($event) {
+                    return _vm.setSearchType(2)
+                  }
+                }
+              },
+              [_vm._v("機能を絞って探す")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "search-type-btn",
+                on: {
+                  click: function($event) {
+                    return _vm.setSearchType(3)
+                  }
+                }
+              },
+              [_vm._v("キーワードで探す")]
+            )
+          ])
+        ])
+      : _c("div", { staticClass: "pf-search-btn-show" }, [
+          _c(
+            "button",
+            {
+              staticClass: "search-type-btn",
+              on: {
+                click: function($event) {
+                  return _vm.showList()
+                }
+              }
+            },
+            [_vm._v("条件検索")]
+          )
+        ]),
+    _vm._v(" "),
+    _vm.type == 0
+      ? _c("div", [_vm._v("\n\t\t言語を絞って探す\n\t")])
+      : _vm.type == 1
+      ? _c("div", [_vm._v("\n\t\tスキルを絞って探す\n\n\t")])
+      : _vm.type == 2
+      ? _c("div", [_vm._v("\n\t\t機能を絞って探す\n\n\n\t")])
+      : _vm.type == 3
+      ? _c("div", [_vm._v("\n\t\tキーワードで探す\n\n\t")])
+      : _vm._e()
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "v-pf-search-list" }, [
-      _c("button", [_vm._v("言語を絞って探す")]),
-      _vm._v(" "),
-      _c("button", [_vm._v("スキルを絞って探す")]),
-      _vm._v(" "),
-      _c("button", [_vm._v("機能を絞って探す")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
